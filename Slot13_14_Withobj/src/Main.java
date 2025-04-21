@@ -13,11 +13,15 @@ public class Main {
     public static void main(String[] args) {
         MyQueue mq = new MyQueue();
 
-        mq.enqueue("001", "Quang", 20, 10);
-        mq.enqueue("002", "Vy", 22, 9.5);
-        mq.enqueue("003", "Thinh", 24, 5);
-        mq.enqueue("004", "Thu", 26, 2.4);
+        mq.enqueue("S001", "Nguyen Van A", 20, 3.5);
+        mq.enqueue("S002", "Tran Thi B", 21, 3.8);
+        mq.enqueue("S003", "Le Van C", 19, 3.2);
+        mq.enqueue("S004", "Pham Thi D", 22, 3.9);
+        mq.enqueue("S005", "Hoang Van E", 20, 3.6);
 
+        System.out.println("All students in the queue:");
         mq.display();
+        
+        mq.hightGPA();
     }
 }

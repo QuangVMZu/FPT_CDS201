@@ -64,4 +64,23 @@ public class MyQueue {
             p = p.next;
         }
     }
+
+    public void hightGPA() {
+        if (isEmpty()) {
+            System.out.println("The queue is empty.");
+            return;
+        }
+
+        Node p = head;
+        Student maxStudent = head.info; // Start with the first student as the max  
+
+        while (p != null) {
+            if (p.info.getGpa() > maxStudent.getGpa()) {
+                maxStudent = p.info; // Update maxStudent if a higher GPA is found  
+            }
+            p = p.next;
+        }
+
+        System.out.println("Student with highest GPA: " + maxStudent);
+    }
 }
