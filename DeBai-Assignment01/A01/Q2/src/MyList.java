@@ -56,7 +56,7 @@ public class MyList {
     void addLast(int id, String name, int price) {
         //------------------------------------------------------------------------------------
         //------ Start your code here---------------------------------------------------------
-        Phone newPhone = new Phone(id, name, id);
+        Phone newPhone = new Phone(id, name, price);
         Node newNode = new Node(newPhone);
 
         if (price > 0) {
@@ -64,7 +64,8 @@ public class MyList {
                 head = tail = newNode;
             } else {
                 tail.next = newNode;
-                tail = newNode;
+                newNode.pre = tail;
+                tail = tail.next;
             }
             size++;
         }
