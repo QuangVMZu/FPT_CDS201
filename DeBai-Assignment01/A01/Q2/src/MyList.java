@@ -100,8 +100,19 @@ public class MyList {
         ftraverseBW(f);
         //------------------------------------------------------------------------------------
         //------ Start your code here---------------------------------------------------------
-        head = head.next.next;
-        size -= 2;
+        if (head != null && head.next != null) {
+            Node secondNode = head.next;
+            head = secondNode.next;
+
+            if (head != null) {
+                head.pre = null;
+            } else {
+                tail = null;
+            }
+
+            secondNode.next = null;
+            size -= 2;
+        }
         //------ End your code here-----------------------------------------------------------
         //------------------------------------------------------------------------------------
         ftraverseFW(f);
@@ -163,6 +174,7 @@ public class MyList {
         Node current = head;
         boolean idExists = false;
 
+        // Check if the ID exists in the list  
         while (current != null) {
             if (current.info.ID == t.ID) {
                 idExists = true;
@@ -171,13 +183,20 @@ public class MyList {
             current = current.next;
         }
 
+        // If the ID does not exist, add the new phone after the head  
         if (!idExists) {
             Node newNode = new Node(t);
-            if (head != null) {
-                newNode.next = head.next;
-                head.next = newNode;
-            } else {
+
+            if (head != null) { // If the list is not empty  
+                newNode.next = head.next; // Point new node to the second node  
+                newNode.pre = head; // Point new node back to head  
+                if (head.next != null) { // If there's a second node, point it back to the new node  
+                    head.next.pre = newNode; // Adjust the previous pointer of the second node  
+                }
+                head.next = newNode; // Link head's next to the new node  
+            } else { // If the list is empty, establish the head  
                 head = newNode;
+                tail = newNode; // The tail will also point to the new node  
             }
             size++;
         }
