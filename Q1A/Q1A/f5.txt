@@ -1,0 +1,3 @@
+Alice | IT | 10.0     Bob | Business | 7.5     Charlie | IT | 9.2     David | Marketing | 6.8     Eva | Finance | 8.0     Frank | IT | 7.8     Grace | Engineering | 9.0     Hannah | Business | 8.5     
+After adding bonus points to IT students:
+Alice | IT | 10.0     Bob | Business | 7.5     Charlie | IT | 10.0     David | Marketing | 6.8     Eva | Finance | 8.0     Frank | IT | 9.8     Grace | Engineering | 9.0     Hannah | Business | 8.5     

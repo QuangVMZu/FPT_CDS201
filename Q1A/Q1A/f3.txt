@@ -1,0 +1,2 @@
+Hannah | Business | 8.5     Grace | Engineering | 9.0     Frank | IT | 7.8     Eva | Finance | 8.0     David | Marketing | 6.8     Charlie | IT | 9.2     Bob | Business | 7.5     Alice | IT | 8.7     
+Number of students with GPA >= 8.0: 5
