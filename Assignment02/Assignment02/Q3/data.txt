@@ -1,0 +1,2 @@
+NVA  LVB  TTC  NVD  LVX  LTH  LHD  LMS
+8  3  5  9  10  2  1  4
