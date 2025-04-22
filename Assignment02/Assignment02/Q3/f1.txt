@@ -1,0 +1,2 @@
+Emergency:     NVA-8.0     LVB-3.0     TTC-5.0     NVD-9.0     LVX-10.0     LTH-2.0     LHD-1.0     LMS-4.0     
+Normal:     NVA-8.0     LVB-3.0     TTC-5.0     NVD-9.0     LVX-10.0     LTH-2.0     LHD-1.0     LMS-4.0     
