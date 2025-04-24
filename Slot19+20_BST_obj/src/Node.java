@@ -27,7 +27,4 @@ public class Node {
     public Node(Student info) {
         this.info = info;
     }
-    
-    
-    
 }
