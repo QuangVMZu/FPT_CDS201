@@ -32,7 +32,7 @@ public class StudentBST {
     }
     
     public void visit(Node p) {
-        System.out.println(p.info + " ");
+        System.out.println(p.info + "\n");
     }
 
     void preOrder(Node p) {
@@ -65,8 +65,7 @@ public class StudentBST {
         }
     }
     
-    public Student findstudentById(int id) {
-        Node p = root;
+    public Student findstudentById(Node p, int id) {
         if (p == null) {
             return null;
         }
@@ -74,9 +73,9 @@ public class StudentBST {
             return p.info;
         }
         if (id < p.info.getId()) {
-            return findstudentById(id);
+            return findstudentById(p.left, id);
         } else {
-            return findstudentById(id);
+            return findstudentById(p.right, id);
         }
     }
     
@@ -95,6 +94,7 @@ public class StudentBST {
     }
     
     public double getAverageGPA() {
-        return sumNode(root) / countNodes(root);
+        int count = countNodes(root);
+        return (count > 0)? (sumNode(root)/count) : 0;
     }
 }
