@@ -1,0 +1,5 @@
+P101 P102 P103 P104 P105 P106
+Laptop Smartphone Headphones Charger Monitor Keyboard
+0 120 200 150 80 100
+P103 P105 P101 P106 P102
+30 0 65 40 35

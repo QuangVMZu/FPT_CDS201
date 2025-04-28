@@ -1,0 +1,6 @@
+ShippingList$SupplyChainManager
+InventoryList
+SupplyChainManager
+InventoryList$ShippingList
+InventoryList$SupplyChainManager
+ShippingList

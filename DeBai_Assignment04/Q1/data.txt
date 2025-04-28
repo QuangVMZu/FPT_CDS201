@@ -1,0 +1,5 @@
+Java C++ Algorithms Python SQL
+10 8 5 15 7
+50 45 70 40 35
+Java Python Ruby SQL C++
+2 3 1 5 2

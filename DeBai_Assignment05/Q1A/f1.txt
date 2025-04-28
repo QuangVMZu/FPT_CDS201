@@ -1,0 +1,2 @@
+Warehouse Inventory: (P102,Smartphone,120) (P103,Headphones,200) (P104,Charger,150) (P105,Monitor,80) (P106,Keyboard,100) 
+Shipping List: (P102,35) (P106,40) (P101,65) (P103,30) 

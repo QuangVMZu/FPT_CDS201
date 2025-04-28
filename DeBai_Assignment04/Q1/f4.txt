@@ -1,0 +1,5 @@
+Book Catalog (BST Preorder Traversal):
+(Java,10,50) (C++,8,45) (Algorithms,5,70) (Python,15,40) (SQL,7,35) 
+Borrow Requests (Queue):
+(Java,2) (Python,3) (Ruby,1) (SQL,5) (C++,2) 
+Total Value of Borrowed Books: 485
